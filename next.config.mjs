@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  turbopack: {},
-
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -10,20 +8,7 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  watchOptions: {
-    pollIntervalMs: 2000,
-  },
-
-  webpack: (config, { dev }) => {
-    if (dev) {
-      config.watchOptions = {
-        ...config.watchOptions,
-        ignored: ['**/node_modules/**', '**/.git/**', '**/.next/**'],
-        aggregateTimeout: 800,
-      };
-    }
-    return config;
-  },
+  turbopack: {},
 };
 
 export default nextConfig;
