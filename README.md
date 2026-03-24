@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="./public/baber.png" alt="Baber Shop Logo" width="150" height="auto" />
   
   # Al-Ostoura Barber Shop 💈
   **Premium Men's Grooming & Barber Shop Website**
